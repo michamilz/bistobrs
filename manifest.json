@@ -1,0 +1,36 @@
+{
+    "name": "BIS ⇄ BRS",
+    "short_name": "BIS ⇄ BRS",
+    "version": "0.0.1",
+    "version_name": "v1.0 alpha",
+    "manifest_version": 2,
+    "default_locale": "de",
+    "author": "Michael Milz",
+    "homepage_url": "https://brs-schwerin.de/browser-addon",
+    "description": "Auf den Seiten zu Sitzungen und Vorgängen vom BIS zum BRS wechseln und umgekehrt. Anzeige von PDFs im Browser",
+    "icons": {
+        "16": "icons/16x16.png",
+        "48": "icons/48x48.png",
+        "128": "icons/128x128.png"
+    },
+    "background": {
+        "scripts": ["background.js", "headers_alter.js"]
+    },
+    "page_action": {
+        "default_icon": {"19": "icons/19x19.png", "38": "icons/38x38.png"},
+        "default_title": "BIS ⇄ BRS"
+    },
+    "content_scripts": [{
+        "matches": ["https://brs-schwerin.de/*", "https://bis.schwerin.de/*"],
+        "js": ["jquery.min.js", "content.js"]
+    }],
+    "permissions" : [
+        "https://bis.schwerin.de/",
+        "declarativeContent",
+        "activeTab",
+        "nativeMessaging",
+        "tabs",
+        "webRequest",
+        "webRequestBlocking"        
+    ]    
+}
