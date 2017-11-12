@@ -8,7 +8,7 @@
                 var currentUrl = window.location.href;
                 if( currentUrl.match(/brs-schwerin/gi) ) {
                     var prev = document.querySelector("link[rel='prev']");
-                    if (typeof prev !== 'undefined'){
+                    if (typeof prev !== null){
                         var brsUrl = prev.href;
                     } else {
                         var brsUrl = document.querySelector("link[rel='shortlink']").href;
