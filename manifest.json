@@ -1,7 +1,7 @@
 {
     "name": "BIS ⇄ BRS",
     "short_name": "BIS ⇄ BRS",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "version_name": "v1.0 alpha",
     "manifest_version": 2,
     "author": "Michael Milz",
