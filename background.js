@@ -36,6 +36,14 @@ chrome.runtime.onInstalled.addListener(function() {
                         css: [
                             "body.session"
                         ]
+                    }),
+                    new chrome.declarativeContent.PageStateMatcher({
+                        pageUrl: { 
+                            hostEquals: 'brs-schwerin.de'
+                        },
+                        css: [
+                            "body.filedetail"
+                        ]
                     })
                 ],
                 // And shows the extension's page action.
