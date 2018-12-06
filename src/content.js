@@ -1,8 +1,9 @@
 (function(){
     "use strict";
     
-    chrome.extension.onMessage.addListener(function (message, sender, sendResponse) {
+    browser.runtime.onMessage.addListener(message => {
         console.log(message);
+
         switch (message.action) {
             case "switchToOtherWebsite":
                 var currentUrl = window.location.href;
@@ -31,7 +32,13 @@
                         var returnUrl = "https://brs-schwerin.de/sitzung/" + matches[2];
                     }
                 }
-                sendResponse({url: returnUrl});
+                return Promise.resolve({url: returnUrl});
+                break;
+
+            case "getBodyClass":
+                var bodyClass = document.getElementsByTagName("body")[0].getAttribute("class");
+                console.log(bodyClass);
+                return Promise.resolve({bodyClass: bodyClass});
                 break;
         }
     });

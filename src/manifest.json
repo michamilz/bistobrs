@@ -1,8 +1,7 @@
 {
     "name": "BIS ⇄ BRS",
     "short_name": "BIS ⇄ BRS",
-    "version": "0.0.6",
-    "version_name": "Alpha 6",
+    "version": "1.0.0",
     "manifest_version": 2,
     "author": "Michael Milz",
     "homepage_url": "https://brs-schwerin.de/browser-addon",
@@ -24,8 +23,8 @@
         "js": ["content.js"]
     }],
     "permissions" : [
-        "https://bis.schwerin.de/",
-        "declarativeContent",
+        "https://bis.schwerin.de/*",
+        "https://brs-schwerin.de/*",
         "activeTab",
         "nativeMessaging",
         "tabs",
