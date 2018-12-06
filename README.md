@@ -1,6 +1,6 @@
 # BIS zu BRS und zurück
 
-Browsererweiterung für Chrome
+Browsererweiterung für Firefox
 
 Wechseln Sie direkt zwischen der Darstellung den Sitzungen und Vorgängen auf 
 https://bis.schwerin.de und https://brs-schwerin.de.
