@@ -1,11 +1,8 @@
 # BIS zu BRS und zurück
+## Browsererweiterung für Firefox
 
-Browsererweiterung für Firefox
+Die Stadt Schwerin bietet unter https://bis.schwerin.de einen öffentlichen Zugang für Bürger zum Ratsinformationssystem. Mit dem Bürgerrecherchesystem unter https://brs-schwerin.de gibt es eine alternative Suche und Ansicht.
 
-Wechseln Sie direkt zwischen der Darstellung den Sitzungen und Vorgängen auf 
-https://bis.schwerin.de und https://brs-schwerin.de.
+Diese Erweiterung erlaubt in der Anzeige von Sitzungen, Vorgängen und Dateien den schnellen Wechsel zwischen beiden Systemen. Dabei bleibt der aktuelle Kontext erhalten.
 
-Betrachten Sie endlich auf https://bis.schwerin.de alle PDFs auch im Browser, 
-anstatt sie jedesmal herunterzuladen.
-
-Link zum Chrome Web Store folgt.
+PDFs aus dem Bürgerinformationsssystem der Stadt Schwerin werden mit dieser Erweiterung im Browser dargestellt und müssen nicht mehr heruntergeladen werden.
